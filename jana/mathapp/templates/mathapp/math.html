@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Vehicle'S Mileage
+        </title>
+        <style>
+            body{
+                background-color:rgb(250, 207, 221); 
+            }
+            .box{
+                margin-left:420px;
+                margin-top:100px;
+                background-color:rgb(255, 130, 170);
+                border: dashed 5px rgb(105, 5, 5);
+                width: 350px;
+                height:auto;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+             <h2 align="center">Vehicle Mileage</h2>
+             <h4 align="center">A.Jannathul Shaban</h4>
+             <h4 align="center">25015672</h4>
+            <form method="post" align="center">
+                {% csrf_token %}
+                <label for="distance">Distance Travelled(in km):</label>
+                <input type="text" name="distance" value="{{ distance }}">
+                <br><br>
+                <label for="fuel">Amount Of Fuel(in litre):</label>
+                <input type="text" name="fuel" value="{{ fuel }}">
+                <br><br>
+                <input type="submit" value="Calculate">
+                <br><br>
+                <label for="mileage">Vehicle's Mileage:</label>
+                <input type="text" name="mileage" value="{{mileage}}">
+                
+
+
+            </form>
+
+        </div>
+    </body>
+</html>
