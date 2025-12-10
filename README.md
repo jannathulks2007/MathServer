@@ -1,5 +1,5 @@
 # Ex.04 Design a Website for Server Side Processing
-## Date:09/12/25
+## Date:10/12/25
 
 ## AIM:
 To create a web page to calculate vehicle mileage and fuel efficiency using server-side scripts.
@@ -60,15 +60,15 @@ math.html
              <h4 align="center">25015672</h4>
             <form method="post" align="center">
                 {% csrf_token %}
-                <label for="distance">Distance Travelled(in km):</label>
+                <label>Distance Travelled(in km):</label>
                 <input type="text" name="distance" value="{{ distance }}">
                 <br><br>
-                <label for="fuel">Amount Of Fuel(in litre):</label>
+                <label>Amount Of Fuel(in litre):</label>
                 <input type="text" name="fuel" value="{{ fuel }}">
                 <br><br>
                 <input type="submit" value="Calculate">
                 <br><br>
-                <label for="mileage">Vehicle's Mileage:</label>
+                <label>Vehicle's Mileage:</label>
                 <input type="text" name="mileage" value="{{mileage}}">
                 
 
@@ -100,10 +100,10 @@ urlpatterns=[path('', views.Vehicle,name='Vehicle')]
 
 
 ## OUTPUT - SERVER SIDE:
-![alt text](<Screenshot (24).png>)
+![alt text](<Screenshot (29).png>)
 
 ## OUTPUT - WEBPAGE:
-![alt text](<Screenshot (25).png>)
+![alt text](<Screenshot (28).png>)
 
 ## RESULT:
 The a web page to calculate vehicle mileage and fuel efficiency using server-side scripts is created successfully.

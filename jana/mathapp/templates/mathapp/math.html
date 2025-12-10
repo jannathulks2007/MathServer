@@ -25,15 +25,15 @@
              <h4 align="center">25015672</h4>
             <form method="post" align="center">
                 {% csrf_token %}
-                <label for="distance">Distance Travelled(in km):</label>
+                <label>Distance Travelled(in km):</label>
                 <input type="text" name="distance" value="{{ distance }}">
                 <br><br>
-                <label for="fuel">Amount Of Fuel(in litre):</label>
+                <label>Amount Of Fuel(in litre):</label>
                 <input type="text" name="fuel" value="{{ fuel }}">
                 <br><br>
                 <input type="submit" value="Calculate">
                 <br><br>
-                <label for="mileage">Vehicle's Mileage:</label>
+                <label>Vehicle's Mileage:</label>
                 <input type="text" name="mileage" value="{{mileage}}">
                 
 
